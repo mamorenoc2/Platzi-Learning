@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <section id="description" class="container grid">
+            <div class="content">
+                <div class="description__info">
+                    <h1 class="title-center title">HTML</h1>
+                    <h2 class="section__title">¿Qué es HTML?</h2>
+                    <p>El Lenguaje de Marcado de Hipertexto o HTML por sus siglas en inglés (HyperText Markup Language) es el código para construir la estructura de una página web. En otras palabras, HTML es el esqueleto con el cual definimos cada elemento que compone la página web, así como: enlaces, párrafos, títulos, botones, imágenes, formularios, entre otros.</p>
+                        <div class="content sub-content">
+                            <div>
+                                <h3 class="section__subtitle">Herramientas del navegador</h3>
+                                <p>Las herramientas del navegador son importantes para visualizar lo que ocurre con el código generado. Entre una de la opciones está identificar los elementos que están estructurados en la página web con sus respectivos estilos.</p>
+                                <p>Las herramientas de desarrollador se despliegan con la combinación de teclas <code>F12</code>  / <code>Ctrl + Shift + I</code>  / <code>Cmd + Opt + I</code>  o clic derecho e “Inspeccionar” en tu navegador preferido (se recomienda Google Chrome).</p>
+                            </div>
+                            <div>
+                                <h3 class="section__subtitle">Motores de renderizado</h3>
+                                <p>Los motores de renderizado son programas que traducen nuestro código en un lenguaje que entienda el navegador, de esta manera el programa sabrá que es lo que tiene que mostrar por pantalla al usuario.</p>
+                                <p>Los navegadores tienen sus propios motores: Chrome - Blink, Edge - Edge HTML, Safari - Webkit y Firefox - Gecko. Todos realizan esta compilación de manera diferente, pero con el mismo resultado, es decir, convierten los archivos a píxeles.</p>
+                                <figure>
+                                    <img src="./img/frontend_developer03.png" alt="">
+                                </figure>
+                            </div>
+                            <div>
+                                <h3 class="section__subtitle">Proceso de renderizado del motor del navegador</h3>
+                                <p>El motor del navegador realiza 5 pasos o procesos para compilar nuestro código hasta el renderizado por pantalla. Estos pasos son los siguientes:</p>
+                                <ul>
+                                    <li><i class="fa fa-code"></i>Transforma los archivos a un árbol de objetos HTML o CSS, estos se denominan DOM (Document Object Model) y CSSDOM (Cascade Style Sheet Object Model), respectivamente. Cada nodo en el árbol es una representación de los elementos que contiene el archivo HTML o CSS.</li>
+                                    <li><i class="fa fa-code"></i>Calcula el estilo correspondiente a cada nodo del DOM relacionado al CSSDOM.</li>
+                                    <li><i class="fa fa-code"></i>Calcula las dimensiones de cada nodo y dónde va en la pantalla.</li>
+                                    <li><i class="fa fa-code"></i>Pinta o renderiza los diferentes elementos como cajas o contenedores.</li>
+                                    <li><i class="fa fa-code"></i>Agrupa todas las cajas en diferentes capas para convertirlas en una imagen que se renderiza en pantalla.</li>
+                                    <figure>
+                                        <img src="./img/frontend_developer04.png" alt="">
+                                    </figure>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section id="elementos" class="container grid">
+            <div class="content">
+                <h2 class="section__title title-center">Maquetación con HTML
+                </h2>
+                <p>Los elementos son cada una de las partes que conforman un archivo HTML. Su estructura contiene:</p>
+                <ul>
+                    <li><i class="fa fa-code"></i><strong>Etiquetas</strong>: es la representación de un elemento HTML. Se dividen en etiquetas de apertura, divrepresentadas por <code>&lt;etiqueta&gt;</code>  y etiquetas de cierre, representadas por <code>&lt;/etiqueta&gt;</code> .</li>
+                    <li><i class="fa fa-code"></i> <strong>Contenido</strong>: es el texto o elementos encerrados por la etiqueta, este valor es opcional en algunas de ellas.</li>
+                    <figure>
+                        <img src="./img/frontend_developer05.webp" alt="">
+                    </figure>
+                </ul>
+                <br>
+                <hr>
+                <h3 class="section__subtitle2">Atributos en HTML</h3>
+                <p>Los atributos HTML son propiedades en la etiqueta de apertura que manejan el comportamiento del elemento. Su valor está envuelto en comillas.</p>
+                <figure>
+                    <img src="./img/frontend_developer06.webp" alt="Atributos">
+                </figure>
+                <br>
+                <hr>
+                <h3 class="section__subtitle2">Elementos vacios</h3>
+                <p>Los elementos vacíos son aquellos que únicamente se representan en una etiqueta de apertura. Por ejemplo, la etiqueta de imagen: <code>&lt;img...&gt;</code> .</p>
+                <figure>
+                    <img src="./img/frontend_developer08.webp" alt="">
+                </figure>
+                <p>Estas etiquetas pueden cerrarse en la misma etiqueta de apertura, utilizando la barra inclinada “/” al final: <code>&lt;img.../&gt;</code> </p>
+                <br>
+                <hr>
+                <h3 class="section__subtitle2">Anidamiento de elementos</h3>
+                <p>El anidamiento de elementos HTML consiste en envolver varias etiquetas en otras etiquetas. Interpreta a cada elemento HTML como una caja donde puedes guardar diferentes elementos u otras cajas. Estas cajas tendrán diferentes tamaños y estarán colocadas junto a otras.</p>
+                <figure>
+                    <img src="./img/frontend_developer07.webp" alt="anidamiento en html">
+                </figure>
+                <p>Aquellas etiquetas que envuelven a otras se las denomina “padres”. Es decir, <code>&lt;section&gt;</code> es padre de <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code> , <code>&lt;ul&gt;</code>, y a su vez <code>&lt;ul&gt;</code> es padre de 3 etiquetas <code> &lt;li&gt;</code> .</p>
+                <p>Las etiquetas que son el contenido de otras, se las denomina “hijos”. Es decir, las etiquetas <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;ul&gt;</code> son hijos de <code>&lt;section&gt;</code>, y a su vez las etiquetas <code> &lt;li&gt;</code> son hijos de <code>&lt;ul&gt;</code>.</p>
+                <br>
+                <hr>
+                <h3 class="section__subtitle">Estructura básica de un documento HTML</h3>
+                <p>La estructura básica de un documento HTML está configurado por las siguientes etiquetas principales:</p>
+                <figure>
+                    <img src="./img/frontend_developer08.webp" alt="">
+                </figure>
+                <h4 class="section__subtitle2">Etiqueta Doctype</h4>
+                <p>La etiqueta <code>&lt;!DOCTYPE html&gt;</code>  especifica que el archivo se maneje con la versión 5 de HTML.</p>
+                <h4 class="section__subtitle2">Etiqueta html</h4>
+                <p>La etiqueta <code>&lt;html&gt;</code> define el elemento raíz de un documento HTML. Todos los demás elementos deben estar contenidos dentro de este elemento raíz. En esta etiqueta se especifica el lenguaje de la página web mediante la propiedad <code>lang</code>.</p>
+                <h4 class="section__subtitle2">Etiqueta head</h4>
+                <p>La etiqueta <code>&lt;head&gt;</code>  define la metainformación, es decir, toda información que no es contenido como tal de la página web. Por ejemplo, los enlaces a archivos CSS y JavaScript, el título y la imagen que aparecen en la pestaña del navegador. Esto es importante para motores de búsqueda como Google</p>
+                <h4 class="section__subtitle2">Etiqueta body</h4>
+                <p>La etiqueta <code>&lt;body&gt;</code>  define el contenido de la página web. Debe ser hijo cercano de <code>&lt;html&gt;</code> y padre de todas las etiquetas HTML, excepto por aquellas que definan metainformación.</p>
+                <br>
+                <hr>
+                <h3 class="section__subtitle2">Comentarios de HTML</h3>
+                <p>Los comentarios de HTML consiste en señalar algo que se ignorará. Para establecer un comentario HTML se lo envuelve entre <code>&lt;!--</code> y <code>--&gt;</code>, independiente de la cantidad de líneas.</p>
+            </div>
+        </section>
+        <section id="semantica" class="container">
+            <div class="content">
+                <h2 class="section__title">El problema con la etiqueta div</h2>
+                <p>El HTML semántico consiste en que cada elemento tenga su propia etiqueta que lo defina correctamente. Sin utilizar etiquetas muy generales, como <code>&lt;div&gt;</code> o <code>&lt;span&gt;</code> .</p>
+                <p>La etiqueta div define un bloque genérico de contenido, que no tiene ningún valor semántico. Se utiliza para elementos de diseño como contenedores.</p>
+                <h3 class="section__subtitle">¿Cuáles son las etiquetas semánticas?</h3>
+                <p>Las etiquetas semánticas para definir una interfaz de una página web son:</p>
+                <ul>
+                    <li><i class="fa fa-code"></i> <code>&lt;header&gt;:</code> define el encabezado de la página (no confundir con <code>&lt;head&gt;</code> ). </li>
+                    <li><i class="fa fa-code"></i> <code>&lt;nav&gt;</code>: define una barra de navegación que incluye enlaces. </li>
+                    <li><i class="fa fa-code"></i> <code>&lt;section&gt;</code>:  define una sección de la página. </li>
+                    <li><i class="fa fa-code"></i> <code>&lt;footer&gt;</code>:  define un pie de página o de sección. </li>
+                    <li><i class="fa fa-code"></i> <code>&lt;article&gt;</code>:  define un artículo, el cual puede tener su propio encabezado, navegación, sección o pie de página. </li>
+                </ul>
+                <figure>
+                    <img src="./img/frontend_developer10.webp" alt="">
+                </figure>
+            </div>
+        </section>
+    </main>
+    <script src="./variables.js"></script>
+</body>
+</html>

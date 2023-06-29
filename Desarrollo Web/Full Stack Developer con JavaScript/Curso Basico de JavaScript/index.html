@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+     <!-- FONT AWESOME -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <section id="description" class="container grid">
+            <div class="content">
+                <div class="description__info">
+                    <h1 class="title-center section__title">JavaScript</h1>
+                    <h2 class="section__title">¿Que es javascript?</h2>
+                    <p>JavaScript es un lenguaje de programación dinámico que tiene la capacidad de ser utilizado en muchos dispositivos diferentes. Puede usarse en ordenadores personales, servidores web y teléfonos inteligentes. Se emplea comúnmente para el desarrollo web front-end y más recientemente para algunos desarrollos back-end a través de frameworks como Node.Js. o Next.Js. Tiene características como la programación orientada a objetos, funciones y herencia basada en prototipos.</p>
+                    <p>Javascript <em>nace</em> con la necesidad de generar dinamismo en las páginas web y que a su vez los usuarios y las empresas pudieran interactuar unos con otros. Fue creado por Brendan Eich en 1995 y se convirtió en un estándar oficial del World Wide Web Consortium (W3C) en 1997.</p>
+                    <p> Es un lenguaje <strong>interpretado</strong>, <strong>orientado a objetos</strong>, <strong>débilmente tipado</strong> y <strong>dinámico</strong>
+                        <div class="content sub-content">
+                            <div>
+                                <h3 class="section__subtitle">Lenguaje dinámico</h3>
+                                <p>Corre directamente en la etapa de Runtime, sin una etapa de compilación previa. Esto permite probar nuestro código inmediatamente; pero también es lo que hace que los errores no se muestren sino hasta que se ejecuta el programa. Lo que se ve a primera vista, cuando se analiza el código, es muy probable que no sea lo que se va a obtener cuando el programa se ejecute.</p>
+                                <p>JavaScript permite declarar (por ejemplo) variables cuyo valor (y tipo) solo se conocerá al momento de su ejecución en función de las condiciones dadas al momento de correrlo en un entorno real. En cambio, los lenguajes estáticos no compilarán en código ejecutable a menos que todos los valores (o tipos de valores) se conozcan por adelantado.</p>
+                            </div>
+                            <div>
+                                <h3 class="section__subtitle">Orientado a Objeto</h3>
+                                <p>Cualquier lenguaje que permita la definición de tipos de datos, de operaciones nuevas sobre esos tipos de datos, y de instanciar el tipo de datos podría ser considerado orientado a objetos.</p>
+                            </div>
+                            <div  class="sub-content-dt">
+                                <h3 class="section__subtitle">Débilmente tipado</h3>
+                                <p>Porque los tipos de datos no están bien definidos en el lenguaje y permite, por ejemplo, operaciones entre numerosos y letras. Esto sucede porque el lenguaje asume tipos de datos que no necesariamente fueron los que se querían representar. Se pueden hacer operaciones entre tipos distintos de datos (enteros con strings, booleanos con enteros, etc.). Ejemplo:</p>
+                                <figure>
+                                    <img src="./img/debilmente-tipado.png" alt="">
+                                </figure>
+                                
+                            </div>
+                        </div>
+                        <h2 class="section__title">¿Realmente es Javascript un lenguaje interpretado?</h2>
+                        <p>Sí, y la razón es que el navegador lee línea por línea nuestro código, el cual le indica lo que tiene que ir haciendo, sin la necesidad de compilar. Todo esto es controlado por el motor de Javascript V8 del navegador</p>
+                        <p>Todas las funciones nuevas que salen para Javascript no dañarán el trabajo ya hecho previamente, pero no se podrá utilizar en nuestro entorno de trabajo inmediatamente. Para solucionar esto está Babel, que permite usar las nuevas características del lenguaje, pero lo transforma a una versión que el navegador pueda entender.</p>
+                </div>
+            </div>
+        </section>
+        <section id="elementos" class="container grid">
+            <div class="content">
+                <h2 class="section__title title-center">Elementos de un Lenguaje de Programación: Variables, Funciones y Sintaxis
+                </h2>
+                <p>En JavaScript existe <strong>dos componentes</strong>  principales: datos que guardamos en memoria y tareas que haremos con esos datos. Estos conforman los elementos de un lenguaje de programación.</p>
+                <div class="content sub-content">
+                    <div>
+                        <h3 class="section__subtitle">Tipos de datos</h3>
+                    <p>Los tipos de datos es la característica propia que tiene un valor. En JavaScript existen los tipos de datos primitivos y los no primitivos.</p>
+                    <h4 class="section__subtitle2">Datos primitivos</h4>
+                    <ul>
+                        <li><i class="fa fa-code"></i> <strong>Number <code>number</code>:</strong>  indica un valor numérico, ya sea entero o flotante (con decimales).</li>
+                        <li><i class="fa fa-code"></i> <strong>String <code>"" - ''</code>:</strong>   indica una cadena de caracteres, el valor está envuelto en comillas dobles " o simples '</li>
+                        <li><i class="fa fa-code"></i> <strong>Boolean <code>true</code> <code>false</code>:</strong>   indica un valor lógico binario, es decir, los valores true o false.</li>
+                        <li><i class="fa fa-code"></i> <strong>Null <code>null</code>:</strong>  indica un valor nulo</li>
+                        <li><i class="fa fa-code"></i> <strong>undefined <code>undefined</code>:</strong>  indica un valor no definido.</li>
+                        <li><i class="fa fa-code"></i> <strong>bigint <code>bigint</code>:</strong>  Mas adelante</li>
+                        <li><i class="fa fa-code"></i> <strong>symbol <code>symbol</code>:</strong> Mas adelante</li>
+                    </ul>
+
+                    <h4 class="section__subtitle2">Datos no primitivos o de objeto</h4>
+                    <ul>
+                        <li><i class="fa fa-code"></i> <strong>Number <code>function()</code>:</strong>  Representacion de funciones</li>
+                        <li><i class="fa fa-code"></i> <strong>Object <code>{}</code>:</strong> Represetacion de objetos</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="variables" class="container grid">
+            <div class="content">
+                <h2 class="section__title">Variables en JavaScript</h2>
+                <p>En JavaScript, existen tres formas de declarar variables: utilizando las palabras reservadas var, let y const. Cada una de ellas tiene características y comportamientos ligeramente diferentes. A continuación, te explicaré cómo se utilizan:</p>
+                <div class="content sub-content var">
+                    <h3 class="section__subtitle">Var</h3>
+                    <p><em>var</em> es la forma más antigua de declarar variables en JavaScript. Puedes utilizar var para declarar variables tanto dentro como fuera de bloques de código (como funciones). </p>
+                    <figure>
+                        <img src="./img/var.png" alt="">
+                    </figure>
+                    <h4 class="section__subtitle2">Ventajas</h4>
+                    <ul>
+                        <li><i class="fa fa-code"></i> Es compatible con versiones antiguas de JavaScript.</li>
+                        <li><i class="fa fa-code"></i> Las variables declaradas con var tienen un ámbito de función, lo que significa que están disponibles en todo el cuerpo de la función en la que se declaran</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <p>&lt;div&gt;</p>
+    </main>
+    <script src="./variables.js"></script>
+</body>
+<p></p>
+</html>
