@@ -4,9 +4,195 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS</title>
+     <!-- FONT AWESOME -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <script src="./script.js"></script>
+        <!------------------- HEADER ------------------------>
+    <header class="header">
+            <span class="header-logo">EDU.IO</span>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-link" href="#description">description</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#elementos">elementos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#variables">variables</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#funciones">funciones</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main class="main">
+        <!------------------- DESCIPTION ------------------------>
+        <section id="description" class="container grid">
+            <div class="content">
+                <div class="description__info">
+                    <h1 class="title-center title">CSS</h1>
+                    <h2 class="section__title">¿Que es CSS?</h2>
+                    <p>JavaScript es un lenguaje de programación dinámico que tiene la capacidad de ser utilizado en muchos dispositivos diferentes. Puede usarse en ordenadores personales, servidores web y teléfonos inteligentes. Se emplea comúnmente para el desarrollo web front-end y más recientemente para algunos desarrollos back-end a través de frameworks como Node.Js. o Next.Js. Tiene características como la programación orientada a objetos, funciones y herencia basada en prototipos.</p>
+                    <p>Javascript <em>nace</em> con la necesidad de generar dinamismo en las páginas web y que a su vez los usuarios y las empresas pudieran interactuar unos con otros. Fue creado por Brendan Eich en 1995 y se convirtió en un estándar oficial del World Wide Web Consortium (W3C) en 1997.</p>
+                    <p> Es un lenguaje <strong>interpretado</strong>, <strong>orientado a objetos</strong>, <strong>débilmente tipado</strong> y <strong>dinámico</strong>
+                        <div class="content sub-content">
+                            <div>
+                                <h3 class="section__subtitle">Lenguaje dinámico</h3>
+                                <p>Corre directamente en la etapa de Runtime, sin una etapa de compilación previa. Esto permite probar nuestro código inmediatamente; pero también es lo que hace que los errores no se muestren sino hasta que se ejecuta el programa. Lo que se ve a primera vista, cuando se analiza el código, es muy probable que no sea lo que se va a obtener cuando el programa se ejecute.</p>
+                                <p>JavaScript permite declarar (por ejemplo) variables cuyo valor (y tipo) solo se conocerá al momento de su ejecución en función de las condiciones dadas al momento de correrlo en un entorno real. En cambio, los lenguajes estáticos no compilarán en código ejecutable a menos que todos los valores (o tipos de valores) se conozcan por adelantado.</p>
+                            </div>
+                            <div>
+                                <h3 class="section__subtitle">Orientado a Objeto</h3>
+                                <p>Cualquier lenguaje que permita la definición de tipos de datos, de operaciones nuevas sobre esos tipos de datos, y de instanciar el tipo de datos podría ser considerado orientado a objetos.</p>
+                            </div>
+                            <div  class="sub-content-dt">
+                                <h3 class="section__subtitle">Débilmente tipado</h3>
+                                <p>Porque los tipos de datos no están bien definidos en el lenguaje y permite, por ejemplo, operaciones entre numerosos y letras. Esto sucede porque el lenguaje asume tipos de datos que no necesariamente fueron los que se querían representar. Se pueden hacer operaciones entre tipos distintos de datos (enteros con strings, booleanos con enteros, etc.). Ejemplo:</p>
+                                <figure>
+                                    <img src="./img/debilmente-tipado.png" alt="">
+                                </figure>
+                                
+                            </div>
+                        </div>
+                        <h2 class="section__title">¿Realmente es Javascript un lenguaje interpretado?</h2>
+                        <p>Sí, y la razón es que el navegador lee línea por línea nuestro código, el cual le indica lo que tiene que ir haciendo, sin la necesidad de compilar. Todo esto es controlado por el motor de Javascript V8 del navegador</p>
+                        <p>Todas las funciones nuevas que salen para Javascript no dañarán el trabajo ya hecho previamente, pero no se podrá utilizar en nuestro entorno de trabajo inmediatamente. Para solucionar esto está Babel, que permite usar las nuevas características del lenguaje, pero lo transforma a una versión que el navegador pueda entender.</p>
+                </div>
+            </div>
+        </section>
+        <!------------------- ELEMENTS ------------------------>
+        <section id="elementos" class="container grid">
+            <div class="content">
+                <h2 class="section__title title-center">Elementos de un Lenguaje de Programación: Variables, Funciones y Sintaxis
+                </h2>
+                <p>En JavaScript existe <strong>dos componentes</strong>  principales: datos que guardamos en memoria y tareas que haremos con esos datos. Estos conforman los elementos de un lenguaje de programación.</p>
+                <div class="content sub-content">
+                    <div>
+                        <h3 class="section__subtitle">Tipos de datos</h3>
+                    <p>Los tipos de datos es la característica propia que tiene un valor. En JavaScript existen los tipos de datos primitivos y los no primitivos.</p>
+                    <h4 class="section__subtitle2">Datos primitivos</h4>
+                    <ul>
+                        <li><i class="fa fa-code"></i> <strong>Number <code>number</code>:</strong>  indica un valor numérico, ya sea entero o flotante (con decimales).</li>
+                        <li><i class="fa fa-code"></i> <strong>String <code>"" - ''</code>:</strong>   indica una cadena de caracteres, el valor está envuelto en comillas dobles " o simples '</li>
+                        <li><i class="fa fa-code"></i> <strong>Boolean <code>true</code> <code>false</code>:</strong>   indica un valor lógico binario, es decir, los valores true o false.</li>
+                        <li><i class="fa fa-code"></i> <strong>Null <code>null</code>:</strong>  indica un valor nulo</li>
+                        <li><i class="fa fa-code"></i> <strong>undefined <code>undefined</code>:</strong>  indica un valor no definido.</li>
+                        <li><i class="fa fa-code"></i> <strong>bigint <code>bigint</code>:</strong>  Mas adelante</li>
+                        <li><i class="fa fa-code"></i> <strong>symbol <code>symbol</code>:</strong> Mas adelante</li>
+                    </ul>
+
+                    <h4 class="section__subtitle2">Datos no primitivos o de objeto</h4>
+                    <ul>
+                        <li><i class="fa fa-code"></i> <strong>Number <code>function()</code>:</strong>  Representacion de funciones</li>
+                        <li><i class="fa fa-code"></i> <strong>Object <code>{}</code>:</strong> Represetacion de objetos</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------------- VARIABLES ------------------------>
+        <section id="variables" class="container grid">
+            <div class="content">
+                <h2 class="section__title">Variables en JavaScript</h2>
+                <p>En JavaScript, existen tres formas de declarar variables: utilizando las palabras reservadas var, let y const. Cada una de ellas tiene características y comportamientos ligeramente diferentes. A continuación, te explicaré cómo se utilizan:</p>
+                <div class="content sub-content var">
+                    <h3 class="section__subtitle">Var</h3>
+                    <p><em>var</em> es la forma más antigua de declarar variables en JavaScript. Puedes utilizar var para declarar variables tanto dentro como fuera de bloques de código (como funciones). </p>
+                    <figure>
+                        <img src="./img/var.png" alt="">
+                    </figure>
+                    <h4 class="section__subtitle2">Ventajas</h4>
+                    <ul>
+                        <li><i class="fa fa-code"></i> Es compatible con versiones antiguas de JavaScript.</li>
+                        <li><i class="fa fa-code"></i> Las variables declaradas con var tienen un ámbito de función, lo que significa que están disponibles en todo el cuerpo de la función en la que se declaran</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!------------------- FUNCIONES ------------------------>
+        <section id="funciones" class="container grid">
+            <div class="content">
+                <h2 class="section__title">Funciones en JavaScript</h2>
+                <p>Las funciones son bloques de código que solucionan un problema específico para ser reutilizados. Existen dos tipos de funciones: declarativas y expresivas</p>
+                <div class="content sub-content var">
+                    <h3 class="section__subtitle">Qué son las funciones declarativas</h3>
+                    <p>En JavaScript, las funciones declarativas se las declara con la palabra reservada <code>function</code>. </p>
+                    <p>La declaración de una función declarativa está constituido por las siguientes partes:</p>
+                    <ul>
+                        <li><i class="fa fa-code"></i> La palabra reservada function.</li>
+                        <li><i class="fa fa-code"></i> El nombre de la función: el cual será guardado como referencia en memoria.</li>
+                        <li><i class="fa fa-code"></i> Los parámetros: están envueltas en paréntesis <code>()</code>, son variables propias de la función y deberán utilizarse en el contenido. Hacen referencia a los argumentos en la invocación.</li>
+                        <li><i class="fa fa-code"></i> El contenido: está envuelto por llaves <code>{}</code>, contendrá las líneas de código correspondientes a la lógica del problema.</li>
+                    </ul>
+                    <figure>
+                        <img src="./img/funcion-declarativa.png" alt="">
+                    </figure>
+                    <p>De esta manera, definimos la lógica de la función, pero no la estamos utilizando. Para generar los valores es necesario invocar la función en el código según sea necesario.</p>
+                    <h3 class="section__subtitle">Cómo invocar una función declarativa
+                    </h3>
+                    <p>La invocación o llamada es la manera que utilizamos las funciones para utilizar el valor de retorno <code>return</code> según ciertos argumentos. La invocación de la función declarativa está constituido por dos partes:</p>
+                    <ul>
+                        <li><i class="fa fa-code"></i>El nombre de la función especificada en la declaración.</li>
+                        <li><i class="fa fa-code"></i>Los argumentos, son los valores para cada uno de parámetros de la función envueltos entre paréntesis</li>
+                    </ul>
+                    <figure>
+                        <img src="./img/invocacion-funcion-declarativa.png" alt="">
+                    </figure>
+                    <p>La invocación sirve para emplear una función con diferentes argumentos y guardarlos en una variable.</p>
+                    <figure>
+                        <img src="./img/varias-declaraciones.png" alt="">
+                    </figure>
+                    <p>También existen funciones que simplemente se invocan, pero debes tener en cuenta que retornan por defecto <code>undefined</code>.</p>
+                    <figure>
+                        <img src="./img/defecto-undefined.png" alt="">
+                    </figure>
+                    <hr>
+                    <h3 class="section__subtitle">Plantillas literales</h3>
+                    <p>También puedes utilizar las plantillas literales, una nueva característica del lenguaje para utilizar las variables dentro de <code>${variable}</code> entre las tildes invertidas ( `` ),</p>
+                    <figure>
+                        <img src="./img/plantilla-literal.png" alt="">
+                    </figure>
+                    <hr>
+                    <h3 class="section__subtitle">Qué son las funciones expresivas o anónimas
+                    </h3>
+                    <p>Las funciones expresivas o anónimas consisten en guardar la función en una variable. Tienen la misma declaración e invocación que las funciones declarativas. La diferencia consiste en no especificar un nombre en la función, sino que utiliza el nombre de la variable.</p>
+                    <figure>
+                        <img src="./img/funcion-expresiva.png" alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <section  id="scope" class="container">
+            <div class="content">
+                <h2 class="section__title title-center">Scope</h2>
+                <p>El scope es cada uno de los entornos donde las variables tienen alcance dentro del código de JavaScript. En otras palabras, determina que valor tendrá la variable dependiendo dónde se encuentre.</p>
+                <p>Imagina que pierdes algo importante (llaves, dinero, celular), comienzas a buscar este objeto por los lugares más cercanos en que te encuentras; si no lo encuentras, buscas en los lugares más lejanos y así sucesivamente hasta encontrarlo. Las llaves son las variables y tú eres JavaScript.</p>
+                <p>Si haces referencia a una variable, el motor de JavaScript buscará su declaración en el entorno más cercano, y seguirá buscando en entornos más lejanos hasta llegar a la línea de código que la variable esté declarada, pero no en viceversa. A este proceso se lo denomina cadena de scope (scope chaining).</p>
+                <div class="content sub-content">
+                    <h3 class="section__subtitle">Tipos de Scope</h3>
+                    <p>Existen dos tipos de scope: global y local. El scope local puede ser de función o de bloque. Un bloque es toda porción de código que está encerrada entre llaves {}, estos pueden ser los bloques: función, if, else, while, y for.</p>
+                    <figure>
+                        <img src="./img/scope_closure01.webp" alt="">
+                    </figure>
+                    <p>En la imagen anterior, el entorno más cercano para la variable saludo es el scope de bloque, le sigue el scope de función y finalmente el scope global. Este es un ejemplo del recorrido que sigue JavaScript hasta encontrar la variable referenciada.</p>
+                    <h4 class="section__subtitle2">Scope Global</h4>
+                    <p>Las variables globales son aquellas que se encuentran declaradas fuera de los bloques de código o funciones .El scope global es el entorno donde las variables globales pueden ser accedidas desde cualquier lugar de nuestro programa.</p>
+                    <p>
+                        una variable global puede ser accedida en cualquier parte, porque el scope global es el último entorno en el que JavaScript busca una variable. Recuerda esto cuándo se hable de scope local.
+                    </p>
+                    <figure>
+                        <img src="./img/Scope Global.png" alt="">
+                    </figure>
+                    <h4 class="section__subtitle2">Scope local</h4>
+                    <p>as variables locales son aquellas que se encuentran declaradas dentro de los bloques de código o funciones. El scope local es el entorno donde las variables locales solo se pueden acceder desde una función o bloque del programa.</p>
+                    <p>JavaScript no puede volver a buscar a una función que no sabe si encontrará la variable o no, teniendo en cuenta que puede haber una variedad ilimitada de funciones, ¿cuál buscar? Por eso, el alcance de una función local es el lugar donde fue declarada.</p>
+                    <figure>
+                        <img src="./img/Scope local.png" alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>c
+    </main>
+    <script src="./variables.js"></script>
 </body>
+<p></p>
 </html>

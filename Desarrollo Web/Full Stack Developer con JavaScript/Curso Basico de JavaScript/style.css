@@ -41,7 +41,6 @@ button,
 body {
     display: flex;
     flex-direction: column;
-    gap: 5rem;
     background-color: var(--body-color);
     font-family: var(--body-font);
     font-size:  var(--larger-font-size);

@@ -10,7 +10,20 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <main>
+        <!------------------- HEADER ------------------------>
+        <header class="header">
+            <span class="header-logo">EDU.IO</span>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-link" href="#description">description</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#elementos">elementos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#semantica">semantica</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#funciones">funciones</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main class="main">
+        <!------------------- DESCIPTION ------------------------>
         <section id="description" class="container grid">
             <div class="content">
                 <div class="description__info">
@@ -50,6 +63,7 @@
                 </div>
             </div>
         </section>
+        <!------------------- ELEMENTOS ------------------------>
         <section id="elementos" class="container grid">
             <div class="content">
                 <h2 class="section__title title-center">Maquetación con HTML
@@ -107,6 +121,7 @@
                 <p>Los comentarios de HTML consiste en señalar algo que se ignorará. Para establecer un comentario HTML se lo envuelve entre <code>&lt;!--</code> y <code>--&gt;</code>, independiente de la cantidad de líneas.</p>
             </div>
         </section>
+        <!------------------- SEMANTICA ------------------------>
         <section id="semantica" class="container">
             <div class="content">
                 <h2 class="section__title">El problema con la etiqueta div</h2>
@@ -124,6 +139,23 @@
                 <figure>
                     <img src="./img/frontend_developer10.webp" alt="">
                 </figure>
+                <h3 class="section__subtitle">Ventajas del HTML semantico</h3>
+                <p>Las ventajas de utilizar un HTML semántico son</p>
+                <ul>
+                    <li><i class="fa fa-code"></i>Ayuda a tu sitio a ser accesible</li>
+                    <li><i class="fa fa-code"></i>Mejora tu posicionamiento (SEO)</li>
+                    <li><i class="fa fa-code"></i>Código más claro, legible y mantenible</li>
+                    <li><i class="fa fa-code"></i>Ayuda a buscadores (como Google) a encontrar tu página</li>
+                </ul>
+            </div>
+        </section>
+        <section id="recursos" class="container">
+            <div class="content">
+                <h2 class="section__title">Recursos importantes</h2>
+                <h3><a href="https://platzi.com/blog/etiquetas-html-debes-conocer/" target="_blank">44 etiquetas HTML que debes conocer</a></h3>
+                <h3><a href="https://allthetags.com/" target="_blank">All The Tags</a></h3>
+                <h3><a href="https://htmlreference.io/" target="_blank">HTML Reference</a></h3>
+
             </div>
         </section>
     </main>
