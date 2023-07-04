@@ -7,9 +7,9 @@
     --first-color:  hsl(333,93%,56%);
     --first-color-lighter:  hsl(333, 93%, 76%);
     --title-color: hsl(0, 0%, 87%);
-    --text-color: hsl(0, 0%, 70%);
-    --body-color: hsl(245,22%,10%);
-    --container-color: hsl(200, 10%, 6%);
+    --text-color: hsl(0, 0%, 20%);
+    --container-color:  hsl(337,100%,89%);
+    --body-color: hsl(338,100%,84%);
     --border-color: hsl(0, 0%, 20%);
     --white: #fff;
 
@@ -218,13 +218,7 @@ code{
     font-weight: 500;
 }
 .nav-link:hover{
-    color: var(--first-color-lighter);
-    text-shadow:
-  0 0 7px var(--first-color-lighter),
-  0 0 10px var(--first-color-lighter),
-  0 0 21px var(--first-color-lighter),
-  0 0 42px white,
-  0 0 102px white;
+    color:white
 }
 
 /*------------------- DECRIPTION -----------------------*/

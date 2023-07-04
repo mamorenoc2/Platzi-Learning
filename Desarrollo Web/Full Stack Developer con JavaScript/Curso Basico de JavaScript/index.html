@@ -20,6 +20,8 @@
                     <li class="nav-item"><a class="nav-link" href="#elementos">elementos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#variables">variables</a></li>
                     <li class="nav-item"><a class="nav-link" href="#funciones">funciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#scope">scope</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#hoisting">hoisting</a></li>
                 </ul>
             </nav>
     </header>
@@ -107,7 +109,6 @@
                 </div>
             </div>
         </section>
-
         <!------------------- FUNCIONES ------------------------>
         <section id="funciones" class="container grid">
             <div class="content">
@@ -161,6 +162,7 @@
                 </div>
             </div>
         </section>
+        <!------------------- SCOPE ------------------------>
         <section  id="scope" class="container">
             <div class="content">
                 <h2 class="section__title title-center">Scope</h2>
@@ -190,7 +192,27 @@
                     </figure>
                 </div>
             </div>
-        </section>c
+        </section>
+        <!------------------- HOISTING ------------------------>
+        <section id="hoisting" class="container">
+            <div class="content">
+                <h2 class="section__title">Hoisting</h2>
+                <p>Hoisting es un término para describir que las declaraciones de variables y funciones son desplazadas a la parte superior del scope más cercano, scope global o de función. Esto sucede solamente con las declaraciones y no con las asignaciones.</p>
+                <p>El código permanece igual, solo es una interpretación del motor de JavaScript. En el caso de las variables solamente sucede cuando son declaradas con <code>var</code></p>
+                <h3 class="section__subtitle">Hoisting en variables declaradas con var</h3>
+                <p>La respuesta del console.log es undefined, porque al hacer referencia a una variable que no está declarada aún, JavaScript crea esta variable antes de declararla y le asigna un valor de undefined.</p>
+                <figure>
+                    <img src="./img/hoisting-variabless.png" alt="">
+                </figure>
+                <h3 class="section__subtitle">Hoisting en funciones</h3>
+                <p>La respuesta es "Hola", porque al invocar una función que no está declarada, JavaScript la eleva y por eso podemos invocar una función antes de declararla.</p>
+                <figure>
+                    <img src="./img/hoisting-funciones.png" alt="">
+                </figure>
+                <h3 class="section__subtitle">Buenas prácticas</h3>
+                <p>El tema de Hoisting solo sucede con las declaraciones de variables y funciones, por lo que se** recomienda declarar las variables y las funciones lo más arriba posible del código**, para evitar errores.</p>
+            </div>
+        </section>
     </main>
     <script src="./variables.js"></script>
 </body>
